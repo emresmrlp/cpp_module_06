@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ysumeral <ysumeral@student.42istanbul.com. +#+  +:+       +#+         #
+#    By: ysumeral <ysumeral@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/30 14:08:18 by ysumeral          #+#    #+#              #
-#    Updated: 2026/01/30 14:09:37 by ysumeral         ###   ########.fr        #
+#    Updated: 2026/01/31 22:29:49 by ysumeral         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
