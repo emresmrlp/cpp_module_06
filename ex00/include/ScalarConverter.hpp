@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysumeral <ysumeral@student.42istanbul.c    +#+  +:+       +#+        */
+/*   By: ysumeral <ysumeral@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 14:10:16 by ysumeral          #+#    #+#             */
-/*   Updated: 2026/01/31 22:29:51 by ysumeral         ###   ########.fr       */
+/*   Updated: 2026/02/01 19:19:15 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,25 @@
 # define SCALARCONVERTER_HPP
 # include <iostream>
 # include <string>
+# include <cstdlib>
+# include <cmath>
+# include <iomanip>
+# include <cctype>
+# include <exception>
+# include <climits>
 
-enum LiteralType
+enum PseudoType
 {
-	L_CHAR,
-	L_INT,
-	L_FLOAT,
-	L_DOUBLE,
-	L_PSEUDO,
-	L_INVALID
+	P_NONE,
+	P_POS_INF,
+	P_NEG_INF,
+	P_NAN
+};
+
+struct Scalar
+{
+	double		value;
+	PseudoType	pseudoType;
 };
 
 class ScalarConverter
@@ -34,6 +44,11 @@ class ScalarConverter
 		~ScalarConverter();
 	public:
 		static void convert(const std::string &literal);
+		class InvalidLiteralException : public std::exception
+		{
+			public:
+				const char *what() const throw();
+		};
 };
 
 #endif
