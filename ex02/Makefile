@@ -6,7 +6,7 @@
 #    By: ysumeral <ysumeral@student.42istanbul.com. +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/03 13:50:57 by ysumeral          #+#    #+#              #
-#    Updated: 2026/02/03 13:51:42 by ysumeral         ###   ########.fr        #
+#    Updated: 2026/02/03 17:42:52 by ysumeral         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,10 +14,7 @@
 CXX 		=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 SRC			=	src/main.cpp \
-				src/Base.cpp \
-				src/A.cpp \
-				src/B.cpp \
-				src/C.cpp
+				src/Base.cpp
 OBJ			=	$(SRC:.cpp=.o)
 NAME		=	identify
 
