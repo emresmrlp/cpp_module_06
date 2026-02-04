@@ -6,7 +6,7 @@
 /*   By: ysumeral <ysumeral@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 14:10:16 by ysumeral          #+#    #+#             */
-/*   Updated: 2026/02/01 19:19:15 by ysumeral         ###   ########.fr       */
+/*   Updated: 2026/02/04 13:35:03 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # include <iostream>
 # include <string>
 # include <cstdlib>
-# include <cmath>
 # include <iomanip>
 # include <cctype>
 # include <exception>

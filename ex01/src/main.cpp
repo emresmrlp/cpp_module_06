@@ -6,7 +6,7 @@
 /*   By: ysumeral <ysumeral@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/03 13:08:33 by ysumeral          #+#    #+#             */
-/*   Updated: 2026/02/03 13:50:33 by ysumeral         ###   ########.fr       */
+/*   Updated: 2026/02/04 12:58:39 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,5 @@ int main()
 	std::cout << "Serialized data (id-name): ("
 		<< raw->id << "-" << raw->name << ")" << std::endl;
 	std::cout << "Result: " << (&data == raw ? "OK" : "KO" ) << std::endl;
+	return (0);
 }
